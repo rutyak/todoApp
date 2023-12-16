@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    /* it allow us to add padding and border in width height */
+    box-sizing: border-box; 
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+   
+    --background-color: #1e1616;
+    --text-color:  antiquewhite;
+    --btn-background: #665d5d;
+  }
+  
+ 
+.main-container{
+    display: flex;
+}
+
+.blur{
+    opacity: 0.7;
+}
+/* --------------left-section------------------------ */
+
+.left{
+    width: 17%;
+    height: 100vh;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: var(--background-color);
+}
+
+.title h3{
+    font-size: xx-large;
+    color: darkorange;
+    margin-bottom: 1rem;
+}
+
+.btn-logout button a{
+    text-decoration: none;
+    color: darkturquoise;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.nav-items li a:hover{
+    color: rgb(85, 100, 100);
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+
+/* ---------------------middle---------------- */
+.middle {
+    width: 83%;
+    height: 100vh;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background: #1e1616;
+    color: var(--text-color);
+}
+
+.upper-section{
+    display: flex;
+    margin-bottom: 1.7rem;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #7c6262;
+}
+
+a:hover{
+    color: #aab086;
+}
+
+
+.btn-of-task img{
+    width: 1.5rem;
+}
+
+.middel-of-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.btn-of-task{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.task-module{
+    border: 1px solid gray;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    background: #4b3c1d;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/*-----------task-module-------------------- */
+
+.tasks-status{
+    height: 84vh;
+    height: 84vh;
+    display: flex;
+}
+
+.todo-stage{
+    height: 95%;
+    overflow-y: scroll;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.date-of-task{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.date-of-task p{
+    color: black;
+}
+
+.task-title{
+    color: #ff8c00;
+}
+
+#complete{
+    width: 1.2rem;
+    height: 1.5rem;
+}
+
+.priority-p{
+    font-size: small;
+    color: burlywood;
+}
+
+.task-module-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cross{
+    text-decoration: line-through;
+}
+
+/* //----LogOut---------- */
+
+.btn-logout button{
+    width: 14.5%;
+    height: 5vh;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background: var(--btn-background);
+    margin-bottom: 2rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: fixed;
+    bottom: 0;
+    background: black;
+}

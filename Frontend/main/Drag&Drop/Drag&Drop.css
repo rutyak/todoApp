@@ -1,0 +1,32 @@
+.DragTitles{
+    color: brown;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.DragTitles img{
+    width: 1.5rem;
+}
+.tasks-status {
+    width: 100%;
+    display: flex;
+}
+
+.todo{
+    width: 30%;
+    margin-right: 3.8rem;
+}
+
+.progress{
+    width: 30%;
+    margin-right: 3.8rem;
+}
+
+.done{
+    width: 30%;
+    margin-right: 3.8rem;
+}

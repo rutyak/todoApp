@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    /* it allow us to add padding and border in width height */
+    box-sizing: border-box; 
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: burlywood;
+}
+:root{
+    --background-color: #1e1616;
+    --text-color:  antiquewhite;
+    --btn-background: #665d5d;
+}
+
+.signup{
+    width: 30%;
+    height: 60%;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    margin: 0px auto;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+} 
+
+.signup h1{
+    color: darkorange;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.signup input{
+    width: 90%;
+    height: 2.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding-left: 0.9rem;
+    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.signup button{
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    height: 2rem;
+    background:var(--btn-background);
+    color: white;
+}
+
+.signup p{
+    margin-bottom: 1rem;
+}
+
+.signup p a{
+    color: chocolate;
+    text-decoration: none;
+}
+
+#warning{
+    margin-top: 1rem;
+}
+

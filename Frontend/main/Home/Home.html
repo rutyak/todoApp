@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Todo List</title>
+   <link rel="stylesheet" href="Home.css">
+   <link rel="stylesheet" href="../Add/Add.css">
+   <link rel="stylesheet" href="../Edit/Edit.css">
+   <link rel="stylesheet" href="../Drag&Drop/Drag&Drop.css">
+   <link rel="stylesheet" href="../Search/Search.css">
+</head>
+
+<body>
+   <section class="main-container">
+      <section class="left">
+         <div class="title">
+            <h3>ToDo</h3>
+         </div>
+         <div class="btn-addtodo">
+            <button onclick="handleTaskFrom()">Add Todo</button>
+         </div>
+         <div class="nav-items">
+            <ul>
+               <li><a href="#" onclick="todayTask()">Today's tasks</a></li>
+               <li><a href="#" onclick="allTask()">All tasks</a></li>
+               <li><a href="#" onclick="importantTask()">Important tasks</a></li>
+            </ul>
+         </div>
+         <div class="btn-logout">
+            <button><a href="../../Welcome/Login/login.html">Logout</a></button>
+         </div>
+      </section>
+      <section class="middle">
+         <div class="upper-section">
+            <div class="middle-section">
+
+            </div>
+            <div class="search">
+               <input type="text" placeholder="Search task" id="search">
+               <img src="../../Asset/icons8-search-50.png" alt="icon">
+            </div>
+
+         </div>
+         <div class="form-container">
+            <form action="" id="form">
+               <img  onclick="handleClose()" src="../../Asset/icons8-multiply-50.png" alt="icon">
+               <div>
+                   <label for="task">Task</label><br>
+                   <input type="text" name="task" placeholder="Title" id="task1" text="task"><br>
+               </div>
+               <div>
+                   <label for="desc">Description</label><br>
+                   <input type="text" name="desc" placeholder="Task description" id="desc1"><br>
+               </div>
+               <div>
+                   <label for="desc">Priority of task</label><br>
+                   <select name="priority" id="tasks-priority">
+                       <option value="High">High</option>
+                       <option value="Medium">Medium</option>
+                       <option value="Low">Low</option>
+                   </select>
+               </div>
+               <button class="btn-submit-editedTask">Submit</button>
+               <div id="warning"></div>
+           </form>
+         </div>
+         
+         <div class="tasks-status">
+            <div class="todo container" ondrop="todoDrop(event)" ondragover="allowDrop(event)">
+            <h3 class="DragTitles todo-drag-title"><p>To do</p><img src="../../Asset/todo_icon.png" alt=""></h3>
+            <div class="todo-stage" >
+
+
+            </div>
+            </div>
+
+            <div class="progress container" ondrop="progressDrop(event)" ondragover="allowDrop(event)">
+            <h3 class="DragTitles pro-drag-title"><p>In progress</p><img src="../../Asset/progress.png" alt=""></h3>
+            <div class="progress-stage" >
+                 
+
+            </div>
+            </div>
+
+            <div class="done container" ondrop="doneDrop(event)" ondragover="allowDrop(event)">
+            <h3 class="DragTitles done-drag-title"><p>Done</p><img src="../../Asset/check.png" alt=""></h3>
+            <div class="done-stage">
+
+
+            </div>
+            </div>
+         </div>
+      </section>
+
+
+   </section>
+   <script src="../Home/Home.js"></script>
+   <Script src="../Delete/Delete.js"></Script>
+   <script src="../Edit/Edit.js"></script>
+   <script src="../Drag&Drop/Upcoming.js"></script>
+   <script src="../Drag&Drop/Inprogress.js"></script>
+   <script src="../Drag&Drop/Done.js"></script>
+   <script src="../Add/Add.js"></script>
+   <script src="../Search/Search.js"></script>
+</body>
+
+</html>

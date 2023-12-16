@@ -1,0 +1,16 @@
+
+.btn-of-task p{
+    border: 1px solid gray;
+    padding: 0.2rem;
+    width: 3.2rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    color: #475c5c;
+    background: #1e1a1a;
+    font-size: small;
+}
+
+.date-of-task .edit{
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
